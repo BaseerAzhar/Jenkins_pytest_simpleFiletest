@@ -14,11 +14,12 @@ pipeline {
             {
                 bat "pytest -v -s -m check"
             }
-        }stage('--report--') 
+        }
+        stage('--report--') 
         {
             steps 
             {
-                bat "pytest -v -s -m webtest --alluredir=allure-results"
+                bat "pytest -v -s -m webtest"
             }
         }
         
