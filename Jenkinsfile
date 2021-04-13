@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('---clean---') {
+        stage('--build--') {
             steps {
-                bat "python -m tools.path_cleaner clear-all-cache"
+                bat "pip install -r requirements.tx"
             }
         }
         stage('--test--') {
