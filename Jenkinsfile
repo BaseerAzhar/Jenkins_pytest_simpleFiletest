@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-                sh "python -m tools.path_cleaner clear-all-cache"
+                bat "python -m tools.path_cleaner clear-all-cache"
             }
         }
         stage('--test--') {
