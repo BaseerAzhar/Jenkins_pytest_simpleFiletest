@@ -9,6 +9,12 @@ import allure
 def test_send_http():
     pass  # perform some webtest test for your app
 
+
+@allure.feature("check")
+@allure.title('check')
+@allure.description('check successfully or not')
+@allure.suite("check")
+@pytest.mark.webtest
 @pytest.mark.check
 def test_send():
     pass  # perform some webtest test for your app
