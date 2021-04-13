@@ -1,6 +1,10 @@
 import pytest
+import allure
 
-
+@allure.feature("All Login Users")
+@allure.title('All user login')
+@allure.description('Checking all the user are login successfully or not')
+@allure.suite("LOGIN")
 @pytest.mark.webtest
 def test_send_http():
     pass  # perform some webtest test for your app
