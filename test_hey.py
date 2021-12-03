@@ -31,7 +31,7 @@ def test_send():
                 
     fail  # perform some webtest test for your app
 
-@allure.mark.skip
+@pytest.mark.skip
 @allure.feature("skip")
 @allure.title('skip')
 @allure.description('skip')
