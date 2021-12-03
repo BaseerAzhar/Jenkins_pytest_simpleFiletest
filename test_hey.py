@@ -16,7 +16,7 @@ def test_send_http():
 @allure.suite("check")
 @pytest.mark.check
 def test_send():
-    with allure.step("abcd"):
+    print("------------------------------------------------------------------------------------------")
                 
     pass  # perform some webtest test for your app
 
