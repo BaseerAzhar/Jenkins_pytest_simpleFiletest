@@ -16,9 +16,8 @@ def test_send_http():
 @allure.suite("check")
 @pytest.mark.check
 def test_send():
-    with allure.step(allure_Step):
-                allure.attach(self.driver.get_screenshot_as_png(), name=allure_screenshot_name,
-                              attachment_type=AttachmentType.PNG)
+    with allure.step("abcd"):
+                
     pass  # perform some webtest test for your app
 
 
