@@ -1,4 +1,4 @@
-Pillow==8.1.0
+Pillow>=8.1.0
 allure-pytest==2.8.33
 allure-python-commons==2.8.33
 apipkg==1.5
