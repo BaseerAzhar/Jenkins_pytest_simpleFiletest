@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  jenkins:
+    image: jenkins/jenkins:latest
+    privileged: true
+    user: root
+    ports:
+    - 9090:9091
+    - 50000:50000
+    container_name: jenkins
+    volumes:
+    - /home/baseer/jenkins_compose/jenkins_configuration:/var/jenkins_home
+    - /var/run/docker.sock:/var/run/docker.sock
+
+    
+ # jenkins:
+ #   image: jenkins/jenkins:lts
+ #   
+ #   user: root
+ #   ports:
+ #   - 9090:9091
+ #   - 50000:50000
+ #  container_name: jenkins
+ #  volumes:
+   # - /home/baseer/jenkins_compose/jenkins_configuration:/var/jenkins_home
+ #   - /var/run/docker.sock:/var/run/docker.sock
+  # 
+ #  my-service:
+  #  network_mode: hosts
