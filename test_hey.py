@@ -25,7 +25,7 @@ def test_send():
 @allure.title('Fail')
 @allure.description('Fail')
 @allure.suite("Fail")
-@pytest.mark.check
+@pytest.mark.fail
 def test_send():
     print("------------------------------------------------------------------------------------------")
                 
