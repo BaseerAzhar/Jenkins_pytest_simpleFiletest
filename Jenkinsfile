@@ -21,7 +21,7 @@ pipeline {
         {
             steps 
             {
-                bat "pytest -v -s -m webtest"
+                bat "pytest -v -s -m webtest --alluredir=allure-results" 
             }
         }
         
