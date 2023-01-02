@@ -17,11 +17,18 @@ pipeline {
                 bat "pytest -v -s -m check"
             }
         }
-        stage('--report--') 
+        stage('--test2--') 
         {
             steps 
             {
                 bat "pytest -v -s -m webtest --alluredir=allure-results" 
+            }
+        }
+         stage('--report--') 
+        {
+            steps 
+            {
+                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']] 
             }
         }
         
