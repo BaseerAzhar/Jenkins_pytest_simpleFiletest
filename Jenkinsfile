@@ -29,7 +29,7 @@ pipeline {
             steps 
             {
                 allure includeProperties: false, jdk: '', results: [[path: 'allure-results']] 
-                emailext attachLog: true, body: '', compressLog: true, recipientProviders: [developers()], subject: 'Build Done', to: 'automation@foodservicedirect.com'
+                emailext attachLog: true, body: '', compressLog: true, recipientProviders: [developers()], subject: 'Build Done', to: 'abdulbaseer069@gmail.com'
             }
         }
         
